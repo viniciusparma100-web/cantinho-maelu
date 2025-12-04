@@ -1,0 +1,290 @@
+body  {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 20px;
+
+    background:
+        linear-gradient(rgba(255, 180, 195, 0.25), rgba(255, 180, 195, 0.25)),
+        url("img/imgfundo-novo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+}
+.main-content {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 15px; 
+}
+img {
+    display: block;
+    margin: 0 auto 25px auto;
+    max-width: 330px;
+    height: auto;
+    opacity: 1;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.15));
+    border-radius: 16px;
+}
+
+h1, h2, h3 {
+    font-family: inherit;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #8A0535;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+h2, h3 {
+    text-align: center;
+    color: #8A0535;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.cardapio-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 28px;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.cardapio-container ul {
+    padding: 0;
+    margin: 0;
+}
+
+.cardapio-container ul li {
+    list-style: none;
+    background: #ffffff;
+    padding: 22px;
+    width: 270px;
+    border-radius: 16px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    margin: 12px;
+}
+
+.cardapio-container ul li:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+
+button {
+    background: linear-gradient(135deg, #8A0535, #B51250);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.03);
+    background: linear-gradient(135deg, #B51250, #8A0535);
+}
+
+#resumo-pedido {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    max-width: 380px;
+    margin: 35px auto;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    font-size: 20px;
+    text-align: center;
+}
+
+#itens-pedido li {
+    background: #FFE9EF;
+    padding: 8px 12px;
+    margin-bottom: 6px;
+    border-radius: 8px;
+    font-size: 1.05rem;
+}
+
+
+form {
+    background: white;
+    padding: 28px;
+    border-radius: 16px;
+    max-width: 420px;
+    margin: 40px auto;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-sizing: border-box;
+}
+
+form label {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #8A0535;
+    margin-bottom: 6px;
+    display: block;
+    letter-spacing: 0.3px;
+}
+
+
+form input[type="text"],
+form input[type="tel"] {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fafafa;
+
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: all 0.25s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="tel"]:focus {
+    border-color: #B51250;
+    background: #fff;
+    box-shadow: 0 0 6px rgba(181, 18, 80, 0.25);
+    outline: none;
+}
+
+form button[type="submit"] {
+    margin-top: 10px;
+    width: 100%;
+}
+
+
+#menu-btn {
+    display: none;
+    font-size: 2.2rem;
+    color: #8A0535;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+#menu.show {
+    display: flex;
+}
+
+.remover-item {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 4px 10px;
+    margin-left: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.remover-item:hover {
+    background: #d60000;
+    transform: scale(1.1);
+}
+
+#itens-pedido li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    img {
+        max-width: 300px;
+    }
+
+    .cardapio-container ul li {
+        width: 90%;
+    }
+
+    form,
+    .resumo-container {
+        max-width: 90%;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 8px;
+        font-size: 1.1rem;
+    }
+
+    #menu-btn {
+        display: block;
+    }
+
+    #menu {
+        flex-direction: column;
+        gap: 10px;
+        display: none;
+    }
+
+    #menu.show {
+        display: flex;
+    }
+}
+.cardapio-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 28px;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#cardapio {
+    background: white; 
+    padding: 25px; 
+    border-radius: 16px; 
+    max-width: 600px; 
+    margin: 35px auto; 
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08); 
+    text-align: left; 
+}
+
+#lista-cardapio-dinamica {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#lista-cardapio-dinamica .dia-cardapio {
+    background: none;
+    padding: 15px 0;
+    text-align: left;
+    width: auto;
+    margin: 0;
+    transition: none; 
+    box-shadow: none; 
+    transform: none; 
+}
+
+#lista-cardapio-dinamica .dia-cardapio:last-child {
+    border-bottom: none; 
+}

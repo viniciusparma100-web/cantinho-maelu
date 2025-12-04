@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cantinho Ma&Lu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h1>Bem-vindos ao Cantinho, onde o amor e o sabor andam juntos!</h1>
+
+  <img src="img/img-cantinho.png" alt="Cantinho Ma&Lu">
+
+  <h2>Cardápio do dia</h2>
+
+  <!-- LISTA COMPLETA DOS CARDÁPIOS (manteremos tudo aqui) -->
+  <section id="cardapio-lista" class="cardapio-container">
+        <ul>
+            <!-- SEGUNDA -->
+            <li class="dia-cardapio" data-dia="1">
+                <h3>Segunda-feira</h3>
+                <p>Opção 1: Filé de Frango Grelhado (acompanha arroz, feijão, legumes do dia e farofa)</p>
+                <p>P 18,00 — M 20,00 — G 25,00</p>
+
+                <button class="btn-adicionar" data-nome="Filé de Frango Grelhado (P)" data-preco="18.00">Adicionar ao Pedido (P)</button><br><br>
+                <button class="btn-adicionar" data-nome="Filé de Frango Grelhado (M)" data-preco="20.00">Adicionar ao Pedido (M)</button><br><br>
+                <button class="btn-adicionar" data-nome="Filé de Frango Grelhado (G)" data-preco="25.00">Adicionar ao Pedido (G)</button><br><br>
+            </li>
+
+            <li class="dia-cardapio" data-dia="1">
+                <p>Opção 2: Filé de Frango à Parmegiana (acompanha arroz, feijão, legumes do dia e maionese)</p>
+                <p>P 18,00 — M 20,00 — G 25,00</p>
+
+                <button class="btn-adicionar" data-nome="Filé de Frango à Parmegiana com Maionese (P)" data-preco="18.00">Adicionar ao Pedido (P)</button><br><br>
+                <button class="btn-adicionar" data-nome="Filé de Frango à Parmegiana com Maionese (M)" data-preco="20.00">Adicionar ao Pedido (M)</button><br><br>
+                <button class="btn-adicionar" data-nome="Filé de Frango à Parmegiana com Maionese (G)" data-preco="25.00">Adicionar ao Pedido (G)</button><br><br>
+            </li>
+
+            <!-- TERÇA -->
+            <li class="dia-cardapio" data-dia="2">
+                <h3>Terça-feira</h3>
+                <p>Opção 1: Carne de Panela (acompanha arroz, feijão, legumes do dia e farofa)</p>
+                <p>P 19,00 — M 26,00 — G 36,00</p>
+
+                <button class="btn-adicionar" data-nome="Carne de Panela (P)" data-preco="19.00">Adicionar ao Pedido (P)</button><br><br>
+                <button class="btn-adicionar" data-nome="Carne de Panela (M)" data-preco="26.00">Adicionar ao Pedido (M)</button><br><br>
+                <button class="btn-adicionar" data-nome="Carne de Panela (G)" data-preco="36.00">Adicionar ao Pedido (G)</button><br><br>
+            </li>
+
+            <li class="dia-cardapio" data-dia="2">
+                <p>Opção 2: Carne moída ao molho sugo (acompanha arroz, feijão, legumes do dia e farofa)</p>
+                <p>P 19,00 — M 26,00 — G 36,00</p>
+
+                <button class="btn-adicionar" data-nome="Carne moída ao molho sugo (P)" data-preco="19.00">Adicionar ao Pedido (P)</button><br><br>
+                <button class="btn-adicionar" data-nome="Carne moída ao molho sugo (M)" data-preco="26.00">Adicionar ao Pedido (M)</button><br><br>
+                <button class="btn-adicionar" data-nome="Carne moída ao molho sugo (G)" data-preco="36.00">Adicionar ao Pedido (G)</button><br><br>
+            </li>
+
+            <!-- QUARTA -->
+            <li class="dia-cardapio" data-dia="3">
+                <h3>Quarta-feira</h3>
+                <p>Opção 1: Lasanha à bolonhesa (acompanha arroz branco e maionese)</p>
+                <p>P 18,00 — M 20,00 — G 25,00</p>
+
+                <button class="btn-adicionar" data-nome="Lasanha à bolonhesa (P)" data-preco="18.00">Adicionar ao Pedido (P)</button><br><br>
+                <button class="btn-adicionar" data-nome="Lasanha à bolonhesa (M)" data-preco="20.00">Adicionar ao Pedido (M)</button><br><br>
+                <button class="btn-adicionar" data-nome="Lasanha à bolonhesa (G)" data-preco="25.00">Adicionar ao Pedido (G)</button><br><br>
+            </li>
+
+            <li class="dia-cardapio" data-dia="3">
+                <p>Opção 2: Bife a cavalo (acompanha arroz, feijão, legumes do dia e farofa)</p>
+                <p>P 18,00 — M 20,00 — G 25,00</p>
+
+                <button class="btn-adicionar" data-nome="Bife a cavalo (P)" data-preco="18.00">Adicionar ao Pedido (P)</button><br><br>
+                <button class="btn-adicionar" data-nome="Bife a cavalo (M)" data-preco="20.00">Adicionar ao Pedido (M)</button><br><br>
+                <button class="btn-adicionar" data-nome="Bife a cavalo (G)" data-preco="25.00">Adicionar ao Pedido (G)</button><br><br>
+            </li>
+
+            <!-- QUINTA -->
+            <li class="dia-cardapio" data-dia="4">
+                <h3>Quinta-feira</h3>
+                <p>Opção 1: Strogonoff de carne (acompanha arroz e batata palha)</p>
+                <p>P 18,00 — M 20,00 — G 25,00</p>
+
+                <button class="btn-adicionar" data-nome="Strogonoff de carne (P)" data-preco="18.00">Adicionar ao Pedido (P)</button><br><br>
+                <button class="btn-adicionar" data-nome="Strogonoff de carne (M)" data-preco="20.00">Adicionar ao Pedido (M)</button><br><br>
+                <button class="btn-adicionar" data-nome="Strogonoff de carne (G)" data-preco="25.00">Adicionar ao Pedido (G)</button><br><br>
+            </li>
+
+            <li class="dia-cardapio" data-dia="4">
+                <p>Opção 2: Virado à paulista (acompanha arroz, tutu de feijão, bisteca, ovo frito, couve e farofa)</p>
+                <p>P 18,00 — M 20,00 — G 25,00</p>
+
+                <button class="btn-adicionar" data-nome="Virado à paulista (P)" data-preco="18.00">Adicionar ao Pedido (P)</button><br><br>
+                <button class="btn-adicionar" data-nome="Virado à paulista (M)" data-preco="20.00">Adicionar ao Pedido (M)</button><br><br>
+                <button class="btn-adicionar" data-nome="Virado à paulista (G)" data-preco="25.00">Adicionar ao Pedido (G)</button><br><br>
+            </li>
+
+            <!-- SEXTA -->
+            <li class="dia-cardapio" data-dia="5">
+                <h3>Sexta-feira</h3>
+                <p>Opção 1: Peixe à milanesa (acompanha arroz, feijão, legumes do dia e farofa)</p>
+                <p>P 18,00 — M 20,00 — G 25,00</p>
+
+                <button class="btn-adicionar" data-nome="Peixe à milanesa (P)" data-preco="18.00">Adicionar ao Pedido (P)</button><br><br>
+                <button class="btn-adicionar" data-nome="Peixe à milanesa (M)" data-preco="20.00">Adicionar ao Pedido (M)</button><br><br>
+                <button class="btn-adicionar" data-nome="Peixe à milanesa (G)" data-preco="25.00">Adicionar ao Pedido (G)</button><br><br>
+            </li>
+
+            <li class="dia-cardapio" data-dia="5">
+                <p>Opção 2: Macarrão alho e óleo com bacon</p>
+                <p>P 18,00 — M 20,00 — G 25,00</p>
+
+                <button class="btn-adicionar" data-nome="Macarrão alho e óleo com bacon (P)" data-preco="18.00">Adicionar ao Pedido (P)</button><br><br>
+                <button class="btn-adicionar" data-nome="Macarrão alho e óleo com bacon (M)" data-preco="20.00">Adicionar ao Pedido (M)</button><br><br>
+                <button class="btn-adicionar" data-nome="Macarrão alho e óleo com bacon (G)" data-preco="25.00">Adicionar ao Pedido (G)</button><br><br>
+            </li>
+
+            <!-- SÁBADO -->
+            <li class="dia-cardapio" data-dia="6">
+                <h3>Sábado</h3>
+                <p>Opção 1: Feijoada (acompanha arroz e couve refogada)</p>
+                <p>P 18,00 — M 20,00 — G 25,00</p>
+
+                <button class="btn-adicionar" data-nome="Feijoada (P)" data-preco="18.00">Adicionar ao Pedido (P)</button><br><br>
+                <button class="btn-adicionar" data-nome="Feijoada (M)" data-preco="20.00">Adicionar ao Pedido (M)</button><br><br>
+                <button class="btn-adicionar" data-nome="Feijoada (G)" data-preco="25.00">Adicionar ao Pedido (G)</button><br><br>
+            </li>
+
+            <li class="dia-cardapio" data-dia="6">
+                <p>Opção 2: Filé de coxão mole em tiras (acompanha arroz, feijão, legumes do dia e farofa)</p>
+                <p>P 18,00 — M 20,00 — G 25,00</p>
+
+                <button class="btn-adicionar" data-nome="Filé de coxão mole em tiras (P)" data-preco="18.00">Adicionar ao Pedido (P)</button><br><br>
+                <button class="btn-adicionar" data-nome="Filé de coxão mole em tiras (M)" data-preco="20.00">Adicionar ao Pedido (M)</button><br><br>
+                <button class="btn-adicionar" data-nome="Filé de coxão mole em tiras (G)" data-preco="25.00">Adicionar ao Pedido (G)</button><br><br>
+            </li>
+        </ul>
+  </section>
+
+  <!-- RESUMO DO PEDIDO -->
+<div class="resumo-pedido-card" id="resumo-pedido">
+    <h2>Resumo do Pedido</h2>
+    <ul id="itens-pedido">
+        <li class="item-pedido-placeholder">Nenhum item adicionado ainda.</li>
+    </ul>
+    <p id="total">Total: R$ 0,00</p>
+    <p id="total-geral">Total com entrega: R$ 5,00</p>
+</div>
+
+
+  <h2>Acesse uma plataforma para realizar seu pedido</h2>
+  <h3>Ou peça diretamente pelo site!</h3>
+
+  <!-- FORMULÁRIO -->
+  <form action="#" method="post" id="form-pedido">
+    <label for="nome">Nome completo:</label><br>
+    <input type="text" id="nome" name="nome" required><br><br>
+
+    <label for="telefone">Telefone (WhatsApp):</label><br>
+    <input type="tel" id="telefone" name="telefone" required><br><br>
+
+    <label for="endereco">Endereço de entrega:</label><br>
+    <input type="text" id="endereco" name="endereco" required><br><br>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <!-- MENU HAMBÚRGUER -->
+  <nav>
+    <button id="menu-btn" aria-label="Abrir menu">☰</button>
+    <div id="menu" class="menu-hidden">
+      <button id="btn-whatsapp">WhatsApp</button>
+      <button id="btn-instagram">Instagram</button>
+      <button id="btn-ifood">IFood</button>
+    </div>
+  </nav>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

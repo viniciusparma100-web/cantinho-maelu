@@ -1,0 +1,119 @@
+[
+  {
+    "id": 1,
+    "dia_id": 1,
+    "opcao_nome": "Filé de Frango Grelhado",
+    "acompanhamentos": "arroz, feijão, legumes do dia e farofa",
+    "preco_p": 18.00,
+    "preco_m": 20.00,
+    "preco_g": 25.00
+  },
+  {
+    "id": 2,
+    "dia_id": 1,
+    "opcao_nome": "Filé de Frango à Parmegiana",
+    "acompanhamentos": "arroz, feijão, legumes do dia e maionese",
+    "preco_p": 18.00,
+    "preco_m": 20.00,
+    "preco_g": 25.00
+  },
+  {
+    "id": 3,
+    "dia_id": 2,
+    "opcao_nome": "Carne de Panela",
+    "acompanhamentos": "arroz, feijão, legumes do dia e farofa",
+    "preco_p": 19.00,
+    "preco_m": 26.00,
+    "preco_g": 36.00
+  },
+  {
+    "id": 4,
+    "dia_id": 2,
+    "opcao_nome": "Carne moída ao molho sugo",
+    "acompanhamentos": "arroz, feijão, legumes do dia e farofa",
+    "preco_p": 19.00,
+    "preco_m": 26.00,
+    "preco_g": 36.00
+  },
+  {
+    "id": 5,
+    "dia_id": 3,
+    "opcao_nome": "Lasanha à bolonhesa",
+    "acompanhamentos": "arroz branco e maionese",
+    "preco_p": 18.00,
+    "preco_m": 20.00,
+    "preco_g": 25.00
+  },
+  {
+    "id": 6,
+    "dia_id": 3,
+    "opcao_nome": "Bife a cavalo",
+    "acompanhamentos": "arroz, feijão, legumes do dia e farofa",
+    "preco_p": 18.00,
+    "preco_m": 20.00,
+    "preco_g": 25.00
+  },
+  {
+    "id": 7,
+    "dia_id": 4,
+    "opcao_nome": "Strogonoff de carne",
+    "acompanhamentos": "arroz e batata palha",
+    "preco_p": 18.00,
+    "preco_m": 20.00,
+    "preco_g": 25.00
+  },
+  {
+    "id": 8,
+    "dia_id": 4,
+    "opcao_nome": "Virado à paulista",
+    "acompanhamentos": "arroz, tutu de feijão, bisteca, ovo frito, couve refogada e farofa",
+    "preco_p": 18.00,
+    "preco_m": 20.00,
+    "preco_g": 25.00
+  },
+  {
+    "id": 9,
+    "dia_id": 5,
+    "opcao_nome": "Peixe à milanesa",
+    "acompanhamentos": "arroz, feijão, legumes do dia e farofa",
+    "preco_p": 18.00,
+    "preco_m": 20.00,
+    "preco_g": 25.00
+  },
+  {
+    "id": 10,
+    "dia_id": 5,
+    "opcao_nome": "Macarrão alho e óleo com bacon",
+    "acompanhamentos": "legumes do dia (opcional)",
+    "preco_p": 18.00,
+    "preco_m": 20.00,
+    "preco_g": 25.00
+  },
+  {
+    "id": 11,
+    "dia_id": 6,
+    "opcao_nome": "Feijoada",
+    "acompanhamentos": "arroz e couve refogada na manteiga",
+    "preco_p": 18.00,
+    "preco_m": 20.00,
+    "preco_g": 25.00
+  },
+  {
+    "id": 12,
+    "dia_id": 6,
+    "opcao_nome": "Filé de coxão mole em tiras",
+    "acompanhamentos": "arroz, feijão, legumes do dia e farofa",
+    "preco_p": 18.00,
+    "preco_m": 20.00,
+    "preco_g": 25.00
+  },
+  {
+    "id": 13,
+    "dia_id": 7,
+    "opcao_nome": "Frango Assado",
+    "acompanhamentos": "arroz, batatas e salada",
+    "preco_p": 20.00,
+    "preco_m": 25.00,
+    "preco_g": 30.00
+  }
+]
